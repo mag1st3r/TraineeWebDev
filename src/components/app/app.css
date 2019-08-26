@@ -1,0 +1,31 @@
+:root {
+  --orange-color: #ff4800;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 7rem;
+}
+
+.orange {
+  background: var(--orange-color);
+  color: #fff;
+}
+
+h1.underline {
+  padding: 1.5rem 0 1rem 0;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+h1.underline::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--orange-color);
+}
