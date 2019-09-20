@@ -1,19 +1,15 @@
 export const userCreator = ({
 
-								name,
+								firstName,
+								lastName,
 								email,
-								age,
 								password,
-								city,
-								address
 							}) => {
 	return {
 		id: new Date().getTime(),
-		name,
+		firstName,
+		lastName,
 		email,
-		age,
 		password,
-		city,
-		address
 	}
 };
